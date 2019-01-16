@@ -123,6 +123,10 @@ functions::init() {
     declare(aggregate_fcts::make_max_function<utils::UUID>());
     declare(aggregate_fcts::make_min_function<utils::UUID>());
 
+    declare(aggregate_fcts::make_count_function<bool>());
+    declare(aggregate_fcts::make_max_function<bool>());
+    declare(aggregate_fcts::make_min_function<bool>());
+
     //FIXME:
     //declare(aggregate_fcts::make_count_function<bytes>());
     //declare(aggregate_fcts::make_max_function<bytes>());
