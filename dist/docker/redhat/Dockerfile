@@ -38,7 +38,7 @@ RUN curl http://downloads.scylladb.com/rpm/centos/scylla-3.1.repo -o /etc/yum.re
     mkdir -p /etc/supervisor.conf.d && \
     mkdir -p /var/log/scylla && \
     /node_exporter_install && \
-    chown -R scylla.scylla /var/lib/scylla
+    chown -R root.root /var/lib/scylla
 
 ENV PATH /opt/scylladb/python3/bin:$PATH
 ENTRYPOINT ["/docker-entrypoint.py"]
